@@ -1,0 +1,9 @@
+﻿There are three possible return types for async methods: Task, Task<T> and void, 
+but the natural return types for async methods are just Task and Task<T>. 
+When converting from synchronous to asynchronous code, any method returning a type T becomes an async method returning Task<T>, 
+and any method returning void becomes an async method returning Task. 
+
+Async All The Way
+As you convert synchronous code to asynchronous code, you’ll find that it works best if asynchronous code,
+calls and is called by other asynchronous code—all the way down (or “up,” if you prefer)
+
